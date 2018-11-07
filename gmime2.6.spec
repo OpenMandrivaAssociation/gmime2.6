@@ -17,7 +17,7 @@
 %endif
 
 Summary:	The libGMIME library
-Name:		gmime-%{apiver}
+Name:		gmime%{apiver}
 Version:	2.6.23
 Release:	1
 License:	LGPLv2+
