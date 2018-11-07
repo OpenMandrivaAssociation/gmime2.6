@@ -3,8 +3,8 @@
 %define major	0
 %define apiver	2.6
 %define libname	%mklibname %{name} %{apiver} %{major}
-%define girname	%mklibname %{name}-gir %{apiver}
-%define devname %mklibname %{name} -d
+%define girname	%mklibname %{name} %{apiver}-gir %{apiver}
+%define devname %mklibname %{name} %{apiver} -d
 %define _disable_rebuild_configure 1
 
 %define _gtkdocdir	%{_datadir}/gtk-doc/html
@@ -17,7 +17,7 @@
 %endif
 
 Summary:	The libGMIME library
-Name:		gmime
+Name:		gmime-%{apiver}
 Version:	2.6.23
 Release:	1
 License:	LGPLv2+
