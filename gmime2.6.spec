@@ -25,6 +25,7 @@ Group:		System/Libraries
 Url:		http://spruce.sourceforge.net/gmime
 Source0:	https://download.gnome.org/sources/%{oname}/%{url_ver}/%{oname}-%{version}.tar.xz
 Source100:	gmime.rpmlintrc
+BuildRequires:	pkgconfig(libmcs)
 BuildRequires:	gtk-doc
 BuildRequires:	gpgme-devel
 BuildRequires:	pkgconfig(glib-2.0)
@@ -81,7 +82,7 @@ This library allows you to manipulate MIME messages.
 %configure \
 	--disable-static \
 	--with-html-dir=%{_gtkdocdir} \
-	--enable-gtk-doc \
+	--disable-gtk-doc \
 	--disable-vala
 
 #gw parallel build broken in 2.1.15
