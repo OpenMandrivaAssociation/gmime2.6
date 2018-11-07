@@ -1,10 +1,10 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
-
+%define oname	gmime
 %define major	0
 %define apiver	2.6
-%define libname	%mklibname %{name} %{apiver} %{major}
-%define girname	%mklibname %{name} %{apiver}-gir %{apiver}
-%define devname %mklibname %{name} %{apiver} -d
+%define libname	%mklibname %{oname} %{apiver} %{major}
+%define girname	%mklibname %{oname}-gir %{apiver}
+%define devname %mklibname %{oname} %{apiver} -d
 %define _disable_rebuild_configure 1
 
 %define _gtkdocdir	%{_datadir}/gtk-doc/html
@@ -23,7 +23,7 @@ Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://spruce.sourceforge.net/gmime
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://download.gnome.org/sources/%{oname}/%{url_ver}/%{oname}-%{version}.tar.xz
 Source100:	gmime.rpmlintrc
 BuildRequires:	gtk-doc
 BuildRequires:	gpgme-devel
