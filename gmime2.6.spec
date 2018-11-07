@@ -75,7 +75,7 @@ This library allows you to manipulate MIME messages.
 %endif
 
 %prep
-%setup -q
+%setup -qn %{oname}-%{version}
 
 %build
 %configure \
