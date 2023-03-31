@@ -19,7 +19,7 @@
 Summary:	The libGMIME library
 Name:		gmime%{apiver}
 Version:	2.6.23
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://spruce.sourceforge.net/gmime
