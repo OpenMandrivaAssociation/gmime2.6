@@ -22,7 +22,7 @@ Version:	2.6.23
 Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://spruce.sourceforge.net/gmime
+Url:		https://spruce.sourceforge.net/gmime
 Source0:	https://download.gnome.org/sources/%{oname}/%{url_ver}/%{oname}-%{version}.tar.xz
 Source100:	gmime.rpmlintrc
 BuildRequires:	gtk-doc
