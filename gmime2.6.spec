@@ -25,6 +25,11 @@ Group:		System/Libraries
 Url:		https://spruce.sourceforge.net/gmime
 Source0:	https://download.gnome.org/sources/%{oname}/%{url_ver}/%{oname}-%{version}.tar.xz
 Source100:	gmime.rpmlintrc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk-doc
 BuildRequires:	gpgme-devel
 BuildRequires:	pkgconfig(glib-2.0)
